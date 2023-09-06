@@ -1,0 +1,260 @@
+section {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image-1 {
+    background-image: url('./images/gameview_auto_x2-transformed.jpeg');
+}
+
+.image-2 {
+   
+    
+    background-image: url('./images/gameview33.jpg');
+    
+}
+
+.image-3 {
+
+   background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg')
+    
+}
+
+.image-4 {
+    
+    background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg')}
+
+
+.mainSec1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh !important;
+    overflow: hidden;
+}
+
+
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px !important;
+    object-fit: cover;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.logo {
+    display: flex;
+    height: 220px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    top: -50px;
+
+
+
+}
+
+.logoImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.section1-gameLogo {
+    height: 100%;
+
+    width: 50%;
+
+}
+
+.img-fluid-google {
+    width: 318px;
+    height: 136px;
+
+}
+
+.img-fluid-apple {
+    width: 277px;
+}
+
+
+.section1-buttonContainer {
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+
+
+}
+
+.section1-button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  
+    width: 300px;
+    margin-right: 60px;
+    object-fit: fill;
+}
+
+.section1-button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+   
+    width: 300px;
+    object-fit: fill;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .logo,
+    .section1-buttonContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        top: 0;
+    }
+
+
+    .section1-gameLogo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .section1-buttonContainer {
+        top: 70px;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .logoImage img {
+
+        width: 100%;
+
+    }
+
+
+
+
+}
+
+
+
+.textBox {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.text-heading {
+    color: #ffffff;
+
+}
+
+.text-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    color: #ffffff;
+
+}
+
+.bgImg-container {
+
+    position: absolute;
+    bottom: 126px;
+    right: 327px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 40%;
+    height: 70%;
+
+
+}
+
+
+
+.windmill-container {
+    position: absolute;
+    bottom: 0;
+    left: -111px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 500px !important;
+    width: 500px;
+    background-color: transparent;
+    /* background-color:  #0b2444;*/
+
+}
+
+.image-4 {
+    position: relative;
+}
+
+.windmill {
+    width: 500px !important;
+    height: 500px;
+
+
+}
+
+
+.footer {
+    background-color: #a4d46c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+

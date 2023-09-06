@@ -1,0 +1,47 @@
+
+.aspect  {
+    padding-top: 25%; /* This sets the aspect ratio to 2:1 (50% / 100%) */
+  }
+
+
+  .carousel-control-prev, .carousel-control-next {
+    pointer-events: none !important; /* Disable pointer events on the default Bootstrap controls */
+  }
+
+  .carousel-container {
+    position: relative;
+  }
+  
+  .custom-carousel-controls {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 25px 0px 0px 25px;
+    z-index: 1;
+  }
+  
+  /* Center the text area within the custom control area */
+  .text-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 240px; /* Set the fixed height you desire */
+    width: 95%;
+    overflow: auto; /* Add a scrollbar when content exceeds the fixed height */
+  }
+
+  .prevNextIcons{
+
+    height: 45px;
+  }
+  
+  
+  
