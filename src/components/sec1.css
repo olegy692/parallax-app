@@ -8,27 +8,34 @@ section {
 }
 
 .image-1 {
-    background-image: url('./images/gameview_auto_x2-transformed.jpeg');
+   background-image: url('./images/gameview_auto_x2-transformed.jpeg');
 
-    background-image: url('./images/gameview_auto_x2-transformed.jpeg');
+    
 }
 
 .image-2 {
    
     
     background-image: url('./images/gameview33.jpg');
-    
+
+   
 }
 
 .image-3 {
 
-   background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg')
+   background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg');
+
+  
     
 }
 
 .image-4 {
     
-    background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg')}
+    background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg');
+
+  
+
+}
 
 
 .mainSec1 {
@@ -257,6 +264,8 @@ section {
     max-width: 100%;
     margin: 0 auto;
 }
+
+
 
 
 
