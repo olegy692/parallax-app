@@ -21,6 +21,7 @@ section {
    
 }
 
+/*
 .image-3 {
 
    background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg');
@@ -29,6 +30,8 @@ section {
     
 }
 
+*/
+
 .image-4 {
     
     background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg');
@@ -36,6 +39,7 @@ section {
   
 
 }
+
 
 
 .mainSec1 {
@@ -236,6 +240,7 @@ section {
     height: 500px !important;
     width: 500px;
     background-color: transparent;
+    z-index: 0;
     /* background-color:  #0b2444;*/
 
 }
@@ -268,4 +273,32 @@ section {
 
 
 
+
+.custom-text-sec4{
+
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.text-area-sec4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width: 95%;
+    overflow: auto; 
+    text-align: center;
+  }
 

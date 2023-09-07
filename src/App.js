@@ -24,6 +24,7 @@ function App() {
       </ParallaxProvider>
 
       <Section3 />
+      
 
       <Section4 />
 

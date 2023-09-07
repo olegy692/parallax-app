@@ -48,13 +48,13 @@ function Header() {
             <li className="nav-item">
             <Link
                 activeClass="active-link"
-                to="image-2"
+                to="divbetween1"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={200}
                 onClick={closeBurgerMenu}
-                onSetActive={() => handleSetActive('image-2')}
+                onSetActive={() => handleSetActive('divbetween1')}
               >
                 About
               </Link>
@@ -62,13 +62,13 @@ function Header() {
             <li className="nav-item">
             <Link
                 activeClass="active-link"
-                to="image-3"
+                to="carousel-container"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={200}
                 onClick={closeBurgerMenu}
-                onSetActive={() => handleSetActive('image-3')}
+                onSetActive={() => handleSetActive('carousel-container')}
               >
                 Features
               </Link>

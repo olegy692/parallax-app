@@ -11,6 +11,9 @@ import img1 from './images/recyclingCenter.jpg';
 import img2 from './images/dada6.jpg';
 import img3 from './images/dada5.jpg';
 
+
+import Wave from 'react-wavify'
+
 const ParaBan = () => {
     const carouselRef = React.createRef();
 
@@ -27,7 +30,24 @@ const ParaBan = () => {
     };
 
     return (
+
+
+
         <div className="carousel-container">
+            <div style={{ position: 'absolute', width: '100%', top: '0', transform: 'rotate(180deg)', zIndex: '50' }}>
+
+                <Wave fill='rgba(240, 244, 249, 1)'
+                    paused={false}
+                    style={{ display: 'flex' }}
+                    options={{
+                        height: 70,
+                        amplitude: 40,
+                        speed: 0.20,
+                        points: 4
+                    }}
+                />
+            </div>
+
             <Carousel
                 ref={carouselRef}
                 slide={false}
@@ -38,7 +58,7 @@ const ParaBan = () => {
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: img1, speed: 15 }]}
+                        layers={[{ image: img1, speed: 25 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
@@ -48,7 +68,7 @@ const ParaBan = () => {
                         <div className="text-area">Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
                             Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
                             Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
-                            
+
                         </div>
 
                         <div style={{ height: '55px', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '10px', width: '100%', paddingTop: '8px' }}>
@@ -74,7 +94,7 @@ const ParaBan = () => {
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: img2, speed: 15 }]}
+                        layers={[{ image: img2, speed: 25 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
@@ -109,7 +129,7 @@ const ParaBan = () => {
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: img3, speed: 15 }]}
+                        layers={[{ image: img3, speed: 25 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
@@ -145,7 +165,19 @@ const ParaBan = () => {
                 </CarouselItem>
             </Carousel>
 
-            {/* Custom control area */}
+            <div style={{ position: 'absolute', width: '100%', bottom: '0' }}>
+
+                <Wave fill='rgba(52, 216, 252, 1)'
+                    paused={false}
+                    style={{ display: 'flex' }}
+                    options={{
+                        height: 60,
+                        amplitude: 40,
+                        speed: 0.20,
+                        points: 5
+                    }}
+                />
+            </div>
 
         </div>
     );
