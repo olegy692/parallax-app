@@ -1,0 +1,136 @@
+section {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.bgImg-container {
+
+    position: absolute;
+    bottom: 126px;
+    right: 327px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 40%;
+    height: 70%;
+
+
+}
+
+
+
+.custom-text-sec4{
+
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.text-area-sec4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width: 95%;
+    overflow: auto; 
+    text-align: center;
+  }
+
+
+
+
+.windmill-container {
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 20%;
+    background-color: transparent;
+    z-index: 0;
+    /* background-color:  #0b2444;*/
+
+}
+
+
+.bushes-container {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.bushes {
+    width: 100%;
+
+
+}
+
+
+.mark{
+    border-radius: 50%;
+    position: absolute;
+    left: 500px;
+
+    width: 200px;
+    height: 200px;
+    
+}
+
+.markPic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+
+    .text-area-sec4 {
+        width: 95%;
+    
+      }
+
+    .custom-text-sec4{
+       height: 200px;
+        width: 60%;
+       
+    }
+
+    .windmill-container{
+        width: 15%;
+    }
+
+    .windmill-container img {
+        width: 15%;
+    }
+
+  .windmill{
+    width: 15%;
+  }
+
+  }
+
+
