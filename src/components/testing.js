@@ -9,7 +9,17 @@ import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 import img1 from './images/recyclingCenter.jpg';
 import img2 from './images/dada6.jpg';
-import img3 from './images/dada5.jpg';
+import img3 from './images/222.jpg';
+import img4 from './images/gameview33.jpg';
+import img5 from './images/gameview2_auto_x2_colored_toned-transformed.jpeg';
+import img6 from './images/silhouette.png';
+
+
+import carousel1 from './images/carousel1.jpg';
+import carousel2 from './images/first_auto-transformed22.jpeg';
+
+
+
 
 
 import Wave from 'react-wavify'
@@ -40,9 +50,9 @@ const ParaBan = () => {
                     paused={false}
                     style={{ display: 'flex' }}
                     options={{
-                        height: 70,
-                        amplitude: 40,
-                        speed: 0.20,
+                        height: 30,
+                        amplitude: 30,
+                        speed: 0.10,
                         points: 4
                     }}
                 />
@@ -58,7 +68,7 @@ const ParaBan = () => {
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: img1, speed: 25 }]}
+                        layers={[{ image: carousel1, speed: 25 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
@@ -90,11 +100,14 @@ const ParaBan = () => {
 
                     </div>
                 </CarouselItem>
+
+                
+                
 
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: img2, speed: 25 }]}
+                        layers={[{ image: img5, speed: 25 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
@@ -103,7 +116,10 @@ const ParaBan = () => {
 
                         <div className="text-area">Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
                             Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
-                            Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Ar Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
+                            Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
+                            Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
+                            Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
+                            Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here
                         </div>
 
                         <div style={{ height: '55px', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '10px', width: '100%', paddingTop: '8px' }}>
@@ -125,11 +141,12 @@ const ParaBan = () => {
 
                     </div>
                 </CarouselItem>
+
 
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: img3, speed: 25 }]}
+                        layers={[{ image: img4, speed: 25 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
@@ -163,21 +180,30 @@ const ParaBan = () => {
 
                     </div>
                 </CarouselItem>
+
+
             </Carousel>
 
+
+           
+
+
+{/**
             <div style={{ position: 'absolute', width: '100%', bottom: '0' }}>
 
-                <Wave fill='rgba(52, 216, 252, 1)'
+                <Wave fill='rgba(81, 185, 36, 1)'
                     paused={false}
                     style={{ display: 'flex' }}
                     options={{
-                        height: 60,
-                        amplitude: 40,
-                        speed: 0.20,
-                        points: 5
+                        height: 30,
+                        amplitude: 30,
+                        speed: 0.10,
+                        points: 4
                     }}
                 />
             </div>
+
+             */}
 
         </div>
     );

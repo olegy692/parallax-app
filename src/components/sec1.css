@@ -9,35 +9,23 @@ section {
 
 .image-1 {
    background-image: url('./images/gameview_auto_x2-transformed.jpeg');
-
-    
 }
 
-.image-2 {
-   
-    
-    background-image: url('./images/gameview33.jpg');
-
-   
+.image-2 {      
+    background-image: url('./images/gameview33.jpg');   
 }
 
 /*
 .image-3 {
 
    background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg');
-
-  
     
 }
 
 */
 
 .image-4 {
-    
-    background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg');
-
-  
-
+    background-image: url('./images/first_auto-transformed22.jpeg');
 }
 
 
@@ -90,8 +78,14 @@ section {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+ 
     
 
+}
+
+.logoImage img{
+    width: 750px;
+    height: 350px;
 }
 
 .section1-gameLogo {
@@ -148,7 +142,14 @@ section {
 
 @media (max-width: 768px) {
 
+   
 
+    .logoImage img{
+
+        width: 100%;
+        height: auto;
+    }
+    
     .logo,
     .section1-buttonContainer {
         width: 100%;
@@ -156,7 +157,6 @@ section {
         flex-direction: column;
         align-items: center;
 
-        top: 0;
     }
 
 
@@ -169,136 +169,28 @@ section {
     }
 
     .section1-buttonContainer {
-        top: 70px;
+        top: 0;
         justify-content: center;
         width: 100%;
 
     }
 
-    .logoImage img {
-
-        width: 100%;
-
+    .section1-button1{
+        margin: 0;
     }
 
+   
 
 
-
-}
-
-
-
-.textBox {
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
 
 }
 
-.text-heading {
-    color: #ffffff;
-
-}
-
-.text-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-    color: #ffffff;
-
-}
-
-.bgImg-container {
-
-    position: absolute;
-    bottom: 126px;
-    right: 327px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 40%;
-    height: 70%;
-
-
-}
-
-
-
-.windmill-container {
-    position: absolute;
-    bottom: 0;
-    left: -111px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 500px !important;
-    width: 500px;
-    background-color: transparent;
-    z-index: 0;
-    /* background-color:  #0b2444;*/
-
-}
+**********************************************
 
 .image-4 {
     position: relative;
 }
 
-.windmill {
-    width: 500px !important;
-    height: 500px;
 
-
-}
-
-
-.footer {
-    background-color: #a4d46c;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    height: 150px;
-}
-
-.footer-content {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-
-
-
-
-.custom-text-sec4{
-
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    height: 350px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    border-radius: 25px;
-    z-index: 1;
-}
-
-.text-area-sec4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 240px;
-    width: 95%;
-    overflow: auto; 
-    text-align: center;
-  }
 

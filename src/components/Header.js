@@ -28,11 +28,17 @@ function Header() {
 
   return (
     <div>
-      <header className="header">
+      <header className="header" >
+
+
+
         <nav className={`nav ${isBurgerOpen ? 'open' : ''}`}>
+
           <ul className={`nav-list ${isBurgerOpen ? 'open' : ''}`}>
+
             <li className="nav-item">
-            <Link
+              <Link
+                style={{ fontWeight: 700 }}
                 activeClass="active-link"
                 to="image-1"
                 spy={true}
@@ -45,8 +51,10 @@ function Header() {
                 Home
               </Link>
             </li>
+
             <li className="nav-item">
-            <Link
+              <Link
+                style={{ fontWeight: 700 }}
                 activeClass="active-link"
                 to="divbetween1"
                 spy={true}
@@ -59,8 +67,10 @@ function Header() {
                 About
               </Link>
             </li>
+
             <li className="nav-item">
-            <Link
+              <Link
+                style={{ fontWeight: 700 }}
                 activeClass="active-link"
                 to="carousel-container"
                 spy={true}
@@ -73,8 +83,10 @@ function Header() {
                 Features
               </Link>
             </li>
+
             <li className="nav-item">
               <Link
+                style={{ fontWeight: 700 }}
                 activeClass="active-link"
                 to="image-4"
                 spy={true}
@@ -87,14 +99,22 @@ function Header() {
                 Creators
               </Link>
             </li>
+
           </ul>
+
         </nav>
-       
+
         <div className="burger-icon" onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
           <FontAwesomeIcon icon={faBars} />
         </div>
+
+
+
+
       </header>
-    </div>
+
+
+    </div >
   );
 }
 

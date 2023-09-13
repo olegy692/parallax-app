@@ -33,8 +33,65 @@ const images = [
 const Section1 = () => {
 
 
+
+
     const [scrollY, setScrollY] = useState(0);
-    const maxLeftPosition = 1700; // Maximum left position (e.g., 500px)
+  const elementWidth = 90; 
+  let maxLeftPosition;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Calculate the maximum left position based on viewport width and element width
+  maxLeftPosition = window.innerWidth - (elementWidth + 100);
+
+  // Ensure it's not negative
+  maxLeftPosition = Math.max(maxLeftPosition, 0);
+
+  // Calculate the left position based on scroll position
+  let leftPosition = scrollY * 1.8;
+
+  // Limit the left position to the maximum value
+  if (leftPosition > maxLeftPosition) {
+    leftPosition = maxLeftPosition;
+  }
+
+
+  const divStyle = {
+    height: '100px',
+    width: '170px',
+    backgroundImage: `url(${gbTruck})`,
+    backgroundSize: 'cover',
+    position: 'absolute',
+    top: '864px',
+    left: `${leftPosition}px`,
+    transition: 'left 0.25s ease',
+  };
+
+  if (window.innerWidth <= 768) {
+      divStyle.width = '85px';
+      divStyle.height = '50px' 
+      divStyle.top = '800px'; 
+      leftPosition = scrollY * 0.1;
+     
+    }
+
+
+    {/** 
+
+    const [scrollY, setScrollY] = useState(0);
+    const maxLeftPosition = 1700;
   
     useEffect(() => {
       const handleScroll = () => {
@@ -50,24 +107,18 @@ const Section1 = () => {
       };
     }, []);
   
-    // Calculate the left position based on scroll position
+  
     let leftPosition = scrollY * 1.8;
   
-    // Limit the left position to the maximum value
+    
     if (leftPosition > maxLeftPosition) {
       leftPosition = maxLeftPosition;
     }
+    */}
   
-    const divStyle = {
-      height: '100px',
-      width: '170px',
-      backgroundImage: `url(${gbTruck})`,
-      backgroundSize: 'cover',
-      position: 'absolute',
-      top: '862px',
-      left: `${leftPosition}px`,
-      transition: 'left 0.25s ease',
-    };
+   
+      
+     
 
 
     return (
@@ -100,7 +151,7 @@ const Section1 = () => {
                     <div className='d-md-flex flex-md-row flex-column logo'>
                         <div className="section1-gameLogo">
                             <div className='d-flex flex-row logoImage' >
-                                <img src={logo} alt="Logo" style={{ width: '750px', height: '350px' }} />
+                                <img src={logo} alt="Logo" />
                             </div>
                         </div>
                     </div>
@@ -125,9 +176,7 @@ const Section1 = () => {
                                     style={{ width: '265px', height: '140px' }}
                                 />
                             </a>
-                        </div>
-
-                        
+                        </div>                   
 
                     </div>
                 </div>
@@ -136,8 +185,6 @@ const Section1 = () => {
             <div style={divStyle}></div>
 
         </section>
-
-
 
             </>    
 

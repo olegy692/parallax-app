@@ -10,6 +10,12 @@
 
   .carousel-container {
     position: relative;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .custom-carousel-controls {
@@ -27,6 +33,8 @@
     border-radius: 25px 0px 0px 25px;
     z-index: 1;
   }
+
+  
   
   /* Center the text area within the custom control area */
   .text-area {
@@ -42,6 +50,23 @@
 
     height: 45px;
   }
+
+
+  @media (max-width: 768px) {
+
+   
+    .custom-carousel-controls {
+     
+      width: 60%;
+      height: 200px;
+     
+  }
+
+  .prevNextIcons{
+
+    height: 25px;
+  }
+}
   
   
   
