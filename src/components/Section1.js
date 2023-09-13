@@ -9,6 +9,9 @@ import gbTruck from './images/zaza-512.png'
 
 import Wave from 'react-wavify'
 
+import { MDBAnimation } from "mdbreact";
+
+
 /*
 const images = [
     {
@@ -176,8 +179,10 @@ const Section1 = () => {
                                     style={{ width: '265px', height: '140px' }}
                                 />
                             </a>
-                        </div>                   
+                        </div>       
 
+                      
+     
                     </div>
                 </div>
             </div>

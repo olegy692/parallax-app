@@ -17,6 +17,7 @@ import img6 from './images/silhouette.png';
 
 import carousel1 from './images/carousel1.jpg';
 import carousel2 from './images/first_auto-transformed22.jpeg';
+import carousel3 from './images/1234.png';
 
 
 
@@ -68,7 +69,7 @@ const ParaBan = () => {
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: carousel1, speed: 25 }]}
+                        layers={[{ image: carousel3, speed: 10 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
@@ -107,7 +108,7 @@ const ParaBan = () => {
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: img5, speed: 25 }]}
+                        layers={[{ image: img5, speed: 10 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
@@ -146,7 +147,7 @@ const ParaBan = () => {
                 <CarouselItem>
                     <ParallaxBanner
                         style={{ height: '100vh' }}
-                        layers={[{ image: img4, speed: 25 }]}
+                        layers={[{ image: img4, speed: 10 }]}
                         className="aspect"
                     />
                     <div className="custom-carousel-controls" >
