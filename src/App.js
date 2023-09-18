@@ -27,17 +27,13 @@ function App() {
 
       <Divider></Divider>
 
-     <Section2/> 
-
-    {/** <Section2Test /> */}  
+     <Section2/>  
 
       <ParallaxProvider>
         <ParaBan></ParaBan>
       </ParallaxProvider>
 
      <Section3/>
-
-
 
       <Section4 />
 

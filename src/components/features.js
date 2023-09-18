@@ -20,16 +20,10 @@ function Features() {
 
     return (
 
-        <div class="row justify-content-center " >
+        <div class="Feature row justify-content-center " >
             {elements.map((element, index) => (
-                <div class='col-lg-12 col-md-7 col-sm-12 col-xs-12 rounded p-3  mx-5 my-8 mb-2 hover-effect text-center' key={index}
-                    style={{
-                        maxWidth: '250px',
-                        
-                       
-                    }}>
+                <div className='featureDiv' key={index} >
 
-                   
                     <img
                         class="img-responsive rounded-circle p-3 "
                         src={element.imgSrc}

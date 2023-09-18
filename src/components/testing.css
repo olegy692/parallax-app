@@ -1,11 +1,10 @@
 
 .aspect  {
-    padding-top: 25%; /* This sets the aspect ratio to 2:1 (50% / 100%) */
+    padding-top: 25%; 
   }
 
-
   .carousel-control-prev, .carousel-control-next {
-    pointer-events: none !important; /* Disable pointer events on the default Bootstrap controls */
+    pointer-events: none !important; 
   }
 
   .carousel-container {
@@ -34,16 +33,23 @@
     z-index: 1;
   }
 
-  
-  
-  /* Center the text area within the custom control area */
   .text-area {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 240px; /* Set the fixed height you desire */
+    height: 240px;
     width: 95%;
-    overflow: auto; /* Add a scrollbar when content exceeds the fixed height */
+    overflow: auto; 
+  }
+
+  .buttonsDiv{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    padding-top: 8px;
   }
 
   .prevNextIcons{
@@ -54,18 +60,57 @@
 
   @media (max-width: 768px) {
 
-   
+    .carousel-container{
+      height: auto;
+    }
+
+    .aspect  {
+      padding-top: 10%; 
+    }
+
+    .text-area{
+      margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 95%;
+    overflow: auto; 
+    }
+
     .custom-carousel-controls {
      
-      width: 60%;
+      width: 80%;
       height: 200px;
-     
+      right: 38px;
+      bottom: 20px;
+      border-radius: 25px;
+      top:auto
+  }
+
+  .custom-carousel-controls h1{
+    height: 20px;
+   font-size: 1.8rem;
+   font-weight: 300;
   }
 
   .prevNextIcons{
-
-    height: 25px;
+    height: 35px;
   }
+
+  .buttonsDiv{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+
+ 
+
 }
   
   
