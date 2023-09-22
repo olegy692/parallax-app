@@ -1,18 +1,9 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sec1.css';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import img5 from './images/recycleBorder.png';
-import React, { useEffect, useState, useRef } from 'react';
-
+import React from 'react';
 import './silh.css'
 
-
-
-
-
 const divider = () => {
-
 
   return (
     <div className='divbetween' style={{
@@ -31,6 +22,6 @@ const divider = () => {
     </div>
 
   );
-};
+}; 
 
 export default divider;
