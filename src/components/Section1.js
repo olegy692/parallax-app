@@ -40,7 +40,7 @@ const Section1 = () => {
         leftPosition = scrollY * 0.5;
     }
     else if (window.innerWidth === 820) {
-        maxLeftPosition = window.innerWidth - (elementWidth +100);
+        maxLeftPosition = window.innerWidth - (elementWidth + 100);
         maxLeftPosition = Math.max(maxLeftPosition, 0);
         leftPosition = scrollY * 0.5;
     }
@@ -158,7 +158,7 @@ const Section1 = () => {
         divStyle.width = '85px';
         divStyle.height = '50px';
         divStyle.top = '801px';
-    }  
+    }
     else if (window.innerWidth === 400 && window.innerHeight === 640) {
         divStyle.width = '85px';
         divStyle.height = '50px';
@@ -188,6 +188,11 @@ const Section1 = () => {
         divStyle.width = '85px';
         divStyle.height = '50px';
         divStyle.top = '846px';
+    }
+    else if (window.innerWidth === 430 && window.innerHeight === 932) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '883px';
     }
     else if (window.innerWidth === 432 && window.innerHeight === 768) {
         divStyle.width = '85px';
@@ -233,7 +238,7 @@ const Section1 = () => {
         divStyle.top = '1266px';
     }
     else if (window.innerWidth === 768) {
-        
+
         divStyle.top = '918px';
     }
     else if (window.innerWidth === 800 && window.innerHeight === 1280) {
@@ -241,13 +246,13 @@ const Section1 = () => {
     }
     else if (window.innerWidth === 820 && window.innerHeight === 1180) {
         divStyle.top = '1080px';
-    }    
+    }
     else if (window.innerWidth === 820) {
-        
+
         divStyle.top = '1074px';
     }
     else if (window.innerWidth === 912) {
-        
+
         divStyle.top = '1268px';
     }
     else if (window.innerWidth === 1024 && window.innerHeight === 1366) {
@@ -257,19 +262,13 @@ const Section1 = () => {
         divStyle.top = '1340px';
     }
     else if (window.innerWidth === 1024) {
-        
+
         divStyle.top = '500px';
     }
     else if (window.innerWidth === 1280) {
-        
+
         divStyle.top = '700px';
     }
-    
-
-
-
-
-
 
 
     return (
@@ -294,7 +293,7 @@ const Section1 = () => {
                                 <img
                                     alt='Get it on Google Play'
                                     src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-                                   
+
                                 />
                             </a>
                         </div>
@@ -304,7 +303,7 @@ const Section1 = () => {
                                 <img
                                     src="https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/da-dk.svg"
                                     alt="Download on the App Store"
-                                   
+
                                 />
                             </a>
                         </div>

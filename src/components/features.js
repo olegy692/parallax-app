@@ -11,11 +11,12 @@ function Features() {
 
 
     const elements = [
-        { title: "Opsamle", imgSrc: Collect, alt: "opsamle billedet", description: "Samle affald i byen til at få ressourcer og ølagte ting til bygge nye genstande" },
-        { title: "Genbrug", imgSrc: Container1, alt: "Genbrugs billedet", description: " Organisere affald i forskellige ressourcer ved containerne" },
-        { title: "Byg", imgSrc: hammer3, alt: "byg billedet", description: "byg nye ting med ressourcerne og klar ordre og kontrakter med det " },
-        { title: "Genanvend", imgSrc: recycleIcon, alt: "Genanvend billedet", description: "Genanvend ølagte ting  og lav dem til ressourcer" },
-       
+        { title: "Help to keep city clean", imgSrc: Collect, alt: "opsamle billedet", description: "Samle affald i byen til at få ressourcer og ølagte ting til bygge nye genstande" },
+        { title: "Receive contracts from local authorities", imgSrc: Container1, alt: "Genbrugs billedet", description: " Organisere affald i forskellige ressourcer ved containerne" },
+        { title: "Craft and sell new items", imgSrc: hammer3, alt: "byg billedet", description: "byg nye ting med ressourcerne og klar ordre og kontrakter med det " },
+        { title: "Learn about recycling while playing", imgSrc: recycleIcon, alt: "Genanvend billedet", description: "Genanvend ølagte ting  og lav dem til ressourcer" },
+        { title: "Test your knowledge in quizzes", imgSrc: recycleIcon, alt: "Genanvend billedet", description: "Genanvend ølagte ting  og lav dem til ressourcer" },
+
     ];
 
     return (
@@ -34,8 +35,8 @@ function Features() {
                             background: 'linear-gradient(0deg, rgba(46,127,223,1) 0%, rgba(52,216,252,1) 100%)',
                         }}
                     />
-                     <h3 class='rounded p-1 border-1 border-dark border-1 ' style={{ color: '#0b2444', fontSize: '22px', marginTop:'15px' }}>{element.title}</h3>
-                   
+                    <h3 class='rounded p-1 border-1 border-dark border-1 text-center' style={{ color: '#0b2444', fontSize: '22px', marginTop: '15px' }}>{element.title}</h3>
+
                 </div>
             ))}
         </div>

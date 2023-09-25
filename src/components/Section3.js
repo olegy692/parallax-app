@@ -1,9 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sec1.css';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import img5 from './images/recycleBorder.png';
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 
 import './silh.css'
 
@@ -12,12 +10,9 @@ import './silh.css'
 
 
 const Section3 = () => {
-  
+
 
   return (
-
-
-
 
     <div className='divbetween' style={{
       width: '100%',
@@ -32,12 +27,8 @@ const Section3 = () => {
 
     }}>
 
-<div className='clouds' style={{zIndex:'1'}}></div>
+      <div className='clouds' style={{ zIndex: '1' }}></div>
 
-
-   
-
-   
     </div>
 
 

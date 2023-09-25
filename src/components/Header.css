@@ -89,8 +89,6 @@
     width: 15%;
     justify-content: center;
   }
-
-
 }
 
 @media (max-width: 390px) {
@@ -117,12 +115,7 @@
     width: 15%;
     justify-content: center;
   }
-
-
 }
-
-
-
 
 @media screen and (max-width: 600px) {
   .nav {

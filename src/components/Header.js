@@ -30,8 +30,6 @@ function Header() {
     <div>
       <header className="header" >
 
-
-
         <nav className={`nav ${isBurgerOpen ? 'open' : ''}`}>
 
           <ul className={`nav-list ${isBurgerOpen ? 'open' : ''}`}>
@@ -107,9 +105,6 @@ function Header() {
         <div className="burger-icon" onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
           <FontAwesomeIcon icon={faBars} />
         </div>
-
-
-
 
       </header>
 

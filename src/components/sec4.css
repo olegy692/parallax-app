@@ -7,7 +7,6 @@ section {
     background-attachment: fixed;
 }
 
-
 .bgImg-container {
 
     position: absolute;
@@ -21,7 +20,6 @@ section {
     height: 70%;
 
 }
-
 
 .custom-text-sec4 {
 
@@ -60,7 +58,6 @@ section {
 
 }
 
-
 .bushes-container {
     position: absolute;
     bottom: -1px;
@@ -81,7 +78,6 @@ section {
 
     height: 45px;
 }
-
 
 .contentDiv {
     display: flex;
@@ -105,7 +101,6 @@ section {
 .column2 img {
     height: 50px;
 }
-
 
 .column2 {
 
@@ -138,7 +133,6 @@ section {
     }
 
 }
-
 
 @media (max-width: 1024px) {
     .image-4 {
@@ -211,8 +205,6 @@ section {
         height: 100px;
     }
 
-
-
     .windmill-container {
         width: 0%;
         height: 0%;
@@ -227,9 +219,5 @@ section {
     .windmill {
         width: 15%;
     }
-
-
-
-    
 
 }
