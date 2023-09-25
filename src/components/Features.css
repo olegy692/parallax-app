@@ -1,0 +1,29 @@
+.Feature{
+
+    display: flex;
+    justify-content: center;
+}
+
+.featureDiv{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+@media (max-width: 1024px) {
+
+    .featureDiv {
+        width: 34%;
+        max-width: 170px;
+        display: block;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+    }
+
+}

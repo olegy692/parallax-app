@@ -1,0 +1,194 @@
+.silhouette{
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  bottom:-29px;
+  background-image: url(./images/concreet-removebg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.clouds{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  background-image: url(./images/cloud12.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 12px;
+  z-index: 1;
+}
+
+
+/*
+@media (width: 280px) {
+
+  .silhouette{
+    bottom: -20px !important;
+  }
+
+}
+
+@media (max-width: 320px) and (max-height: 480px) {
+  .silhouette {
+    bottom: -14px !important;
+  }
+}
+
+@media (width: 360px) {
+
+  .silhouette{
+    bottom: -22px !important;
+  }
+
+}
+
+@media (max-width: 360px) and (max-height: 480px) {
+  .silhouette {
+    bottom: -14px !important;
+  }
+}
+
+
+
+@media (width: 375px) {
+
+  .silhouette{
+    bottom: -20px !important;
+  }
+
+}
+
+@media (width: 390px) {
+
+  .silhouette{
+    bottom: -24px !important;
+  }
+
+}
+
+@media (width: 393px) {
+
+  .silhouette{
+    bottom: -26px !important;
+  }
+
+}
+@media (width: 412px) {
+
+  .silhouette{
+    bottom: -27px !important;
+  }
+
+}
+
+@media (width: 414px) {
+
+  .silhouette{
+    bottom: -27px !important;
+  }
+
+}
+
+@media (width: 540px) {
+
+  .silhouette{
+    bottom: -22px !important;
+  }
+
+}
+
+@media (width: 550px) {
+
+  .silhouette{
+    bottom: -18px !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .silhouette{
+    bottom: -15px ;
+  }
+
+}
+
+@media (max-width: 1256px) {
+
+  .silhouette{
+    bottom: -15px ;
+  }
+
+}
+
+@media (width: 768px) {
+
+  .silhouette{
+    bottom: -25px !important;
+  }
+
+}
+
+@media (width: 820px) {
+
+  .silhouette{
+    bottom: -29px !important;
+  }
+
+}
+
+@media (width: 912px) {
+
+  .silhouette{
+    bottom: -41px !important;
+  }
+
+}
+
+@media (width: 1024px) {
+
+  .silhouette{
+    bottom: -18px !important;
+  }
+
+}
+
+@media (width: 1280px) {
+
+  .silhouette{
+    bottom: -24px !important;
+  }
+
+}
+
+*/
+
+
+
+
+/*
+  .bush{
+    position: absolute;
+    
+    
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 17%;
+    background-image: url(./images/bushes2_auto_x2_colored_toned_light_ai-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 12px;
+    
+    z-index: 1;
+  }
+  */

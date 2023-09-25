@@ -28,11 +28,15 @@ function Header() {
 
   return (
     <div>
-      <header className="header">
+      <header className="header" >
+
         <nav className={`nav ${isBurgerOpen ? 'open' : ''}`}>
+
           <ul className={`nav-list ${isBurgerOpen ? 'open' : ''}`}>
+
             <li className="nav-item">
-            <Link
+              <Link
+                style={{ fontWeight: 700 }}
                 activeClass="active-link"
                 to="image-1"
                 spy={true}
@@ -45,36 +49,42 @@ function Header() {
                 Home
               </Link>
             </li>
+
             <li className="nav-item">
-            <Link
+              <Link
+                style={{ fontWeight: 700 }}
                 activeClass="active-link"
-                to="image-2"
+                to="divbetween1"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={200}
                 onClick={closeBurgerMenu}
-                onSetActive={() => handleSetActive('image-2')}
+                onSetActive={() => handleSetActive('divbetween1')}
               >
                 About
               </Link>
             </li>
+
             <li className="nav-item">
-            <Link
+              <Link
+                style={{ fontWeight: 700 }}
                 activeClass="active-link"
-                to="image-3"
+                to="carousel-container"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={200}
                 onClick={closeBurgerMenu}
-                onSetActive={() => handleSetActive('image-3')}
+                onSetActive={() => handleSetActive('carousel-container')}
               >
                 Features
               </Link>
             </li>
+
             <li className="nav-item">
               <Link
+                style={{ fontWeight: 700 }}
                 activeClass="active-link"
                 to="image-4"
                 spy={true}
@@ -87,14 +97,19 @@ function Header() {
                 Creators
               </Link>
             </li>
+
           </ul>
+
         </nav>
-       
+
         <div className="burger-icon" onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
           <FontAwesomeIcon icon={faBars} />
         </div>
+
       </header>
-    </div>
+
+
+    </div >
   );
 }
 

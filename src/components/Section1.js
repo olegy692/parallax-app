@@ -1,51 +1,279 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './sec1.css'
-import logo from './images/logo123.png';
-import logo2 from './images/logo123-removebg-preview.png';
-import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import testImg from "./images/testimg.png";
-import windmill from "./images/windmill.png";
-import mark from "./images/imageSec3.jpg";
-import pict11 from "./images/pict11.jpg";
-import cityBG from "./images/cityBG.png";
-import machine from "./images/machine.jpg";
-import Features from './features';
-
-
-
-
-
-
-
-
-
-
-
-const images = [
-    {
-        title: "testImg",
-        imgSrc: testImg,
-        alt: "test image",
-        description: "this is a test image",
-    },
-    {
-        title: "pict11",
-        imgSrc: pict11,
-        alt: "test image",
-        description: "this is a test image",
-    },
-
-];
-
+import logo from './images/logo123.png';
+import gbTruck from './images/zaza-512.png'
 
 
 const Section1 = () => {
+
+
+    const [scrollY, setScrollY] = useState(0);
+    const elementWidth = 90;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        handleScroll();
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    let leftPosition;
+    let maxLeftPosition;
+
+
+    if (window.innerWidth === 280) {
+        maxLeftPosition = window.innerWidth - (elementWidth);
+        maxLeftPosition = Math.max(maxLeftPosition, 0);
+        leftPosition = scrollY * 0.2;
+    }
+    else if (window.innerWidth <= 768) {
+        maxLeftPosition = window.innerWidth - (elementWidth);
+        maxLeftPosition = Math.max(maxLeftPosition, 0);
+        leftPosition = scrollY * 0.5;
+    }
+    else if (window.innerWidth === 820) {
+        maxLeftPosition = window.innerWidth - (elementWidth + 100);
+        maxLeftPosition = Math.max(maxLeftPosition, 0);
+        leftPosition = scrollY * 0.5;
+    }
+    else {
+        maxLeftPosition = window.innerWidth - (elementWidth + 100);
+        maxLeftPosition = Math.max(maxLeftPosition, 0);
+        leftPosition = scrollY * 1.8;
+    }
+
+    maxLeftPosition = Math.max(maxLeftPosition, 0);
+
+
+    if (leftPosition > maxLeftPosition) {
+        leftPosition = maxLeftPosition;
+    }
+
+
+    const divStyle = {
+        height: '100px',
+        width: '170px',
+        backgroundImage: `url(${gbTruck})`,
+        backgroundSize: 'cover',
+        position: 'absolute',
+        top: '864px',
+        left: `${leftPosition}px`,
+        transition: 'left 0.25s ease',
+    };
+
+    if (window.innerWidth === 280 && window.innerHeight === 653) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '430px !important';
+    }
+    else if (window.innerWidth === 320 && window.innerHeight === 480) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '431px';
+    }
+    else if (window.innerWidth === 320 && window.innerHeight === 533) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '483px';
+    }
+    else if (window.innerWidth === 320 && window.innerHeight === 568) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '519px';
+    }
+    else if (window.innerWidth === 360 && window.innerHeight === 480) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '430px';
+    }
+    else if (window.innerWidth === 360 && window.innerHeight === 598) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '549px';
+    }
+    else if (window.innerWidth === 360 && window.innerHeight === 640) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '590px';
+    }
+    else if (window.innerWidth === 360 && window.innerHeight === 718) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '669px';
+    }
+    else if (window.innerWidth === 360 && window.innerHeight === 740) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '691px';
+    }
+    else if (window.innerWidth === 360 && window.innerHeight === 780) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '730px';
+    }
+    else if (window.innerWidth === 375 && window.innerHeight === 667) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '567px';
+    }
+    else if (window.innerWidth === 375 && window.innerHeight === 812) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '762px';
+    }
+    else if (window.innerWidth === 375) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '617px';
+    }
+    else if (window.innerWidth === 384 && window.innerHeight === 640) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '590px';
+    }
+    else if (window.innerWidth === 390 && window.innerHeight === 695) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '645px';
+    }
+    else if (window.innerWidth === 390 && window.innerHeight === 844) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '794px';
+    }
+    else if (window.innerWidth === 393 && window.innerHeight === 786) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '737px';
+    }
+    else if (window.innerWidth === 393) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '801px';
+    }
+    else if (window.innerWidth === 400 && window.innerHeight === 640) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '590px';
+    }
+    else if (window.innerWidth === 412 && window.innerHeight === 690) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '641px';
+    }
+    else if (window.innerWidth === 412 && window.innerHeight === 892) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '844px';
+    }
+    else if (window.innerWidth === 412) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '865px';
+    }
+    else if (window.innerWidth === 414 && window.innerHeight === 736) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '687px';
+    }
+    else if (window.innerWidth === 414) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '846px';
+    }
+    else if (window.innerWidth === 430 && window.innerHeight === 932) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '883px';
+    }
+    else if (window.innerWidth === 432 && window.innerHeight === 768) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '719px';
+    }
+    else if (window.innerWidth === 480 && window.innerHeight === 800) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '751px';
+    }
+    else if (window.innerWidth === 504 && window.innerHeight === 504) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '454px';
+    }
+    else if (window.innerWidth === 540) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '670px';
+    }
+    else if (window.innerWidth === 550) {
+        divStyle.width = '85px';
+        divStyle.height = '50px';
+        divStyle.top = '539px';
+    }
+    else if (window.innerWidth === 600 && window.innerHeight === 960) {
+        divStyle.top = '861px';
+    }
+    else if (window.innerWidth === 600 && window.innerHeight === 1024) {
+        divStyle.top = '925px';
+    }
+    else if (window.innerWidth === 604 && window.innerHeight === 966) {
+        divStyle.top = '867px';
+    }
+    else if (window.innerWidth === 720 && window.innerHeight === 1280) {
+        divStyle.top = '1180px';
+    }
+    else if (window.innerWidth === 768 && window.innerHeight === 1024) {
+        divStyle.top = '925px';
+    }
+    else if (window.innerWidth === 768 && window.innerHeight === 1366) {
+        divStyle.top = '1266px';
+    }
+    else if (window.innerWidth === 768) {
+
+        divStyle.top = '918px';
+    }
+    else if (window.innerWidth === 800 && window.innerHeight === 1280) {
+        divStyle.top = '1180px';
+    }
+    else if (window.innerWidth === 820 && window.innerHeight === 1180) {
+        divStyle.top = '1080px';
+    }
+    else if (window.innerWidth === 820) {
+
+        divStyle.top = '1074px';
+    }
+    else if (window.innerWidth === 912) {
+
+        divStyle.top = '1268px';
+    }
+    else if (window.innerWidth === 1024 && window.innerHeight === 1366) {
+        divStyle.top = '1267px';
+    }
+    else if (window.innerWidth === 1024 && window.innerHeight === 1440) {
+        divStyle.top = '1340px';
+    }
+    else if (window.innerWidth === 1024) {
+
+        divStyle.top = '500px';
+    }
+    else if (window.innerWidth === 1280) {
+
+        divStyle.top = '700px';
+    }
+
+
     return (
 
         <><section class="image-1">
-
-
 
             <div className='mainSec1'>
 
@@ -53,7 +281,7 @@ const Section1 = () => {
                     <div className='d-md-flex flex-md-row flex-column logo'>
                         <div className="section1-gameLogo">
                             <div className='d-flex flex-row logoImage' >
-                                <img src={logo} alt="Logo" style={{ width: '750px', height: '350px' }} />
+                                <img src={logo} alt="Logo" />
                             </div>
                         </div>
                     </div>
@@ -65,7 +293,7 @@ const Section1 = () => {
                                 <img
                                     alt='Get it on Google Play'
                                     src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-                                    style={{ width: '300px', height: '130px' }}
+
                                 />
                             </a>
                         </div>
@@ -75,7 +303,7 @@ const Section1 = () => {
                                 <img
                                     src="https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/da-dk.svg"
                                     alt="Download on the App Store"
-                                    style={{ width: '265px', height: '140px' }}
+
                                 />
                             </a>
                         </div>
@@ -84,229 +312,11 @@ const Section1 = () => {
                 </div>
             </div>
 
+            <div style={divStyle}></div>
+
         </section>
 
-
-
-            {/** 
-
-            <section className="image-3" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: '250px' }}>
-
-                <div style={{ height: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '5px solid transparent', padding: '20px', borderImage: 'linear-gradient(to right, #0000ff 0%, #ff6600 55% ) 1 stretch' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '98%' }}>
-                        <Features></Features>
-                    </div>
-                </div>
-            </section>
-
-
-            <div className='divbetween1' style={{ width: '100%', height: '55px', backgroundColor: '#0b2444' }}>
-
-            </div>
-
-            */}
-
-
-
-
-            {/** 
- * 
- * 
- * 
- *  <div className='divbetween1'
-                style={{
-                    width: '100%',
-                    height: '500px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    /*backgroundColor: '#0b2444',
-                    background: 'rgb(49,140,245)',
-                    background: 'linear-gradient(0deg, rgba(240,244,249,1) 0%, rgba(52,216,252,1) 100%)',
-
-                
-                }}>
-                <div style={{ height: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '98%' }}>
-
-                        <h2 style={{ color: '#0b2444', marginBottom: '60px' }}>Equip Yourself with Real-Life Recycling Skills in Our Game</h2>
-                        <Features></Features>
-                    </div>
-                </div>
-
-            </div>
- * 
- * 
- * 
- * 
- * 
- * 
- * 
-*/}
-
-
-
-            {/** 
-          
-
-
-            <section class="image-2 d-md-flex flex-md-row flex-column " >
-
-                <div className="d-md-flex flex-md-row flex-column carousel-container">
-                    <Carousel className='carousel'>
-                        {images.map((image, index) => (
-                            <Carousel.Item key={index} interval={2000}>
-                                <img
-                                    className="d-block w-100 carousel-item"
-                                    src={image.imgSrc}
-                                    alt={image.alt}
-                                    style={{ borderRadius: '10px' }}
-                                />
-                                <Carousel.Caption>
-                                    <h3>{image.title}</h3>
-                                    <p>{image.description}</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        ))}
-                    </Carousel>
-                </div>
-
-                <div className="d-md-flex flex-column textBox">
-                    <h3 className="text-heading">Static Text</h3>
-                    <p className="text-description" style={{ color: '#0b2444' }}>
-                        This text remains fixed while images slide.
-                        It can have multiple lines and will be centered both vertically and horizontally.
-                        This text remains fixed while images slide.
-                        It can have multiple lines and will be centered both vertically and horizontally.
-                        This text remains fixed while images slide.
-                        It can have multiple lines and will be centered both vertically and horizontally.
-                        This text remains fixed while images slide.
-                        It can have multiple lines and will be centered both vertically and horizontally.
-                        This text remains fixed while images slide.
-                        It can have multiple lines and will be centered both vertically and horizontally.
-                        This text remains fixed while images slide.
-                        It can have multiple lines and will be centered both vertically and horizontally.
-                    </p>
-                </div>
-
-
-
-            </section>
-
-    */}
-
-
-
-
-
-
-
-
-
-            {/** 
-
-            <div className='divbetween' style={{
-                width: '100%',
-                height: '200px',
-                display: 'flex',
-
-                flexDirection: 'column',
-                alignContent: 'center',
-                alignItems: 'center',
-                justifyContent: 'center',
-
-
-                background: 'rgb(49,140,245)',
-                background: 'linear-gradient(0deg, rgba(240,244,249,1) 0%, rgba(52,216,252,1) 100%)',
-
-            }}>
-                <h1 style={{ color: '#0b2444', marginBottom: '50px' }}> Fun Gaming, Serious Impact</h1>
-                <h3 style={{ color: '#0b2444', marginBottom: '30px' }}> Play and learn about the recycling process, from collection to reprocessing, and how it benefits the environment</h3>
-
-
-            </div>
-
-
-
-
-
-
-            <section class="image-4" style={{ position: 'relative', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-
-
-
-                <div className='sec3' style={{ zIndex: '500', width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center', alignContent: 'center', position: 'absolute', justifyContent: 'center', gap: '200px' }}>
-
-
-
-                    
-
-                    <div >
-                        <img
-                            src={mark}
-                            style={{ width: '800px'}}
-
-                        />
-                    </div>
-
-
-                             <div className="d-md-flex flex-column textBox">
-                        <h3 className="text-heading">Static Text</h3>
-                        <p className="text-description" style={{zIndex:'1'}}>
-                            This text remains fixed while images slide.
-                            It can have multiple lines and will be centered both vertically and horizontally.
-                            This text remains fixed while images slide.
-                            It can have multiple lines and will be centered both vertically and horizontally.
-                            This text remains fixed while images slide.
-                            It can have multiple lines and will be centered both vertically and horizontally.
-                            This text remains fixed while images slide.
-                            It can have multiple lines and will be centered both vertically and horizontally.
-                            This text remains fixed while images slide.
-                            It can have multiple lines and will be centered both vertically and horizontally.
-                            This text remains fixed while images slide.
-                            It can have multiple lines and will be centered both vertically and horizontally.
-                        </p>
-                    </div>
-
-                    
-
-
-
-
-
-
-                </div>
-
-                
-                <div className='bgImg-container'>
-                    <img
-                        src={cityBG}
-                        style={{ height: '800px', zIndex: '501' }}
-                        className="cityBG"
-                    />
-                </div>
-
-                
-
-
-                <div className="windmill-container">
-                    <img
-                        src={windmill}
-                        style={{ width: '250px', zIndex: '501' }}
-                        className="windmill"
-                    />
-                </div>
-
-
-
-            </section>
-            */}
-
-
-
-
-
-            </>    
+        </>
 
 
     );
