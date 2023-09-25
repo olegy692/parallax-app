@@ -20,7 +20,7 @@ import inGame6 from './images/inGamePic7_auto.jpg';
 import inGame7 from './images/inGamePic8_auto.jpg';
 import inGame12 from './images/inGamePic12_auto.jpg';
 import inGame13 from './images/inGamePic13_auto.jpg';
-import inGame16 from './images/inGamePic16_auto.jpg';
+import inGame16 from './images/newPic18_auto.jpg';
 
 
 import inGame1mob from './images/inGamePic2mobile_auto.jpg';
@@ -30,7 +30,7 @@ import inGame6mob from './images/inGamePic7mobile_auto.jpg';
 import inGame7mob from './images/inGamePic8mobile_auto.jpg';
 import inGame12mob from './images/inGamePic12mobile_auto (2).jpg';
 import inGame13mob from './images/inGamePic13mobile_auto.jpg';
-import inGame16mob from './images/inGamePic16mobile_auto.jpg';
+import inGame16mob from './images/newPic18_auto.jpg';
 
 
 
