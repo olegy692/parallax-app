@@ -8,11 +8,11 @@ section {
 }
 
 .image-1 {
-   background-image: url('./images/gameview_auto_x2-transformed.jpeg');
+    background-image: url('./images/gameview_auto_x2-transformed.jpeg');
 }
 
-.image-2 {      
-    background-image: url('./images/gameview33.jpg');   
+.image-2 {
+    background-image: url('./images/gameview33.jpg');
 }
 
 /*
@@ -73,7 +73,7 @@ section {
     justify-content: center;
 }
 
-.logoImage img{
+.logoImage img {
     width: 750px;
     height: 350px;
 }
@@ -83,19 +83,11 @@ section {
     width: 50%;
 }
 
-.img-fluid-google {
-    width: 318px;
-    height: 136px;
-}
-
-.img-fluid-apple {
-    width: 277px;
-}
 
 
 .section1-buttonContainer {
     display: flex;
-    height: 150px;
+    max-width: 200px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -103,35 +95,25 @@ section {
     top: 130px;
 }
 
-.section1-button1 {
+.section1-button1, .section1-button2 {
+    flex: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
-    width: 300px;
-    margin-right: 60px;
-    object-fit: fill;
 }
 
-.section1-button2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-    width: 300px;
-    object-fit: fill;
+.section1-button1 img, .section1-button2 img {
+    height: 100%; 
+    object-fit: contain; 
 }
 
-.section1-button1 img{
-    width: 300px;
-    height: 130px;
+.section1-button1 img {
+    height: 75px;
 }
 
-.section1-button2 img{
-    width: 265px;
-    height: 140px;
+.section1-button2 img {
+    height: 75px;
 }
-
 
 @media (width: 360px) and (height: 480px) {
 
@@ -145,7 +127,7 @@ section {
         width: 100%;
         top: 10px;
     }
-    
+
 }
 
 @media (width: 1024px) and (height: 600px) {
@@ -155,24 +137,24 @@ section {
         height: 220px !important;
     }
 
-    .section1-buttonContainer{
+    .section1-buttonContainer {
         top: -10px;
     }
 
-    .logo{
+    .logo {
         top: -30px;
     }
-    
+
 }
 
 
 @media (max-width: 768px) {
-    .logoImage img{
+    .logoImage img {
 
         width: 100%;
         height: auto;
     }
-    
+
     .logo,
     .section1-buttonContainer {
         width: 100%;
@@ -198,16 +180,16 @@ section {
 
     }
 
-    .section1-button1{
+    .section1-button1 {
         margin: 0;
     }
 
-    .section1-button1 img{
+    .section1-button1 img {
         width: 200px;
         height: 90px;
     }
-    
-    .section1-button2 img{
+
+    .section1-button2 img {
         width: 180px;
         height: 82px;
     }
@@ -215,11 +197,6 @@ section {
 
 }
 
-**********************************************
-
-.image-4 {
+********************************************** .image-4 {
     position: relative;
 }
-
-
-
