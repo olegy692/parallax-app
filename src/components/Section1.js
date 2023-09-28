@@ -3,6 +3,9 @@ import './sec1.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './images/logo123.png';
 import gbTruck from './images/zaza-512.png'
+import GoogleLogo from './images/google-play-badge.png'
+import AppStoreLogo from './images/Download_on_the_App_Store_Badge_DK_RGB_blk_100217.svg'
+
 
 
 const Section1 = () => {
@@ -122,7 +125,7 @@ const Section1 = () => {
     else if (window.innerWidth === 375 && window.innerHeight === 667) {
         divStyle.width = '85px';
         divStyle.height = '50px';
-        divStyle.top = '567px';
+        divStyle.top = '616px';
     }
     else if (window.innerWidth === 375 && window.innerHeight === 812) {
         divStyle.width = '85px';
@@ -286,22 +289,23 @@ const Section1 = () => {
                         </div>
                     </div>
 
+                   
                     <div className="d-md-flex flex-md-row flex-column section1-buttonContainer ">
 
                         <div className="d-flex section1-button1">
                             <a href='https://play.google.com/store/apps/details?id=com.ArgoGamesRoskilde.Genbrugsspillet&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                                 <img
                                     alt='Get it on Google Play'
-                                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+                                    src={GoogleLogo}
 
                                 />
                             </a>
                         </div>
 
-                        <div className="d-flex section1-button2">
+                         <div className="d-flex section1-button2">
                             <a href="https://apple.co/3QIJ0PL">
                                 <img
-                                    src="https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/da-dk.svg"
+                                    src={AppStoreLogo}
                                     alt="Download on the App Store"
 
                                 />
@@ -309,10 +313,23 @@ const Section1 = () => {
                         </div>
 
                     </div>
+                    
+
+                
                 </div>
+
+                <div style={{ height: '8%', width: '100%' }}>
+
+                <div style={divStyle}></div>
+
+                </div>
+
             </div>
 
-            <div style={divStyle}></div>
+
+
+
+            {/**  <div style={divStyle}></div> */}
 
         </section>
 
