@@ -1,213 +1,464 @@
 section {
+
     height: 100vh;
+
     width: 100%;
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     background-size: cover;
+
     background-attachment: fixed;
+
 }
+
+ 
 
 .image-1 {
-    background-image: url('./images/gameview_auto_x2-transformed.jpeg');
+
+   background-image: url('./images/gameview_auto_x2-transformed.jpeg');
+
 }
 
-.image-2 {
-    background-image: url('./images/gameview33.jpg');
+ 
+
+.image-2 {      
+
+    background-image: url('./images/gameview33.jpg');  
+
 }
+
+ 
 
 /*
+
 .image-3 {
 
+ 
+
    background-image: url('./images/gameview2_auto_x2_colored_toned-transformed.jpeg');
-    
+
+   
+
 }
+
+ 
 
 */
 
+ 
+
 .image-4 {
+
     background-image: url('./images/first_auto-transformed22.jpeg');
+
 }
+
+ 
 
 .mainSec1 {
+
     display: flex;
+
     flex-direction: column;
+
     height: 100vh !important;
+
     overflow: hidden;
+
 }
 
+ 
+
+ 
 
 .background-image {
+
     position: absolute;
+
     top: 0;
+
     left: 0;
+
     width: 100%;
+
     height: 1000px !important;
+
     object-fit: cover;
+
 }
+
+ 
 
 .content-container {
+
     position: relative;
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     justify-content: center;
+
     height: 100%;
+
 }
 
+ 
+
+ 
 
 .logo {
+
     display: flex;
+
     height: 220px;
+
     flex-direction: row;
+
     align-items: center;
+
     justify-content: center;
+
     position: relative;
+
     width: 100%;
+
     top: -50px;
+
 }
+
+ 
 
 .logoImage {
+
     display: flex;
+
     flex-direction: row;
+
     align-items: center;
+
     justify-content: center;
+
 }
 
-.logoImage img {
+ 
+
+.logoImage img{
+
     width: 750px;
+
     height: 350px;
+
 }
+
+ 
 
 .section1-gameLogo {
+
     height: 100%;
+
     width: 50%;
+
 }
 
+ 
 
+.img-fluid-google {
+
+    width: 318px;
+
+    height: 136px;
+
+}
+
+ 
+
+.img-fluid-apple {
+
+    width: 277px;
+
+}
+
+ 
+
+ 
 
 .section1-buttonContainer {
+
     display: flex;
-    max-width: 200px;
+
+    height: 30%;
+
     flex-direction: row;
+
     align-items: center;
+
     justify-content: center;
+
     position: relative;
+
     top: 130px;
+
 }
 
-.section1-button1{
-    flex: 1; 
+ 
+
+.section1-button1 {
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
-    height: 80px !important;
-    margin-right: 30px;
+
+    height: 100%;
+
+    /* width: 300px; */
+
+    margin-right: 60px;
+
+    object-fit: fill;
+
 }
 
+ 
 
 .section1-button2 {
-    flex: 1; 
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
-    height: 80px !important;
+
+    height: 100%;
+
+    /* width: 300px; */
+
+    object-fit: fill;
+
 }
 
-.section1-button1 img, .section1-button2 img {
-    height: 100%; 
-    object-fit: contain; 
+ 
+
+.section1-button1 img{
+
+    /* width: 300px; */
+
+    height: 130px;
+
 }
 
-.section1-button1 img {
- height: 95px;
+ 
+
+.section1-button2 img{
+
+    /* width: 265px; */
+
+    height: 100px;
+
 }
 
-.section1-button2 img {
-    height: 75px;
+ 
+
+.gbTruckDiv{
+
+    height: 15%;
+
+    max-width: 100%;
+
+    position: static;
+
 }
+
+ 
+
+ 
 
 @media (width: 360px) and (height: 480px) {
 
+ 
+
     .logo {
+
         display: flex;
+
         height: 220px;
+
         flex-direction: row;
+
         align-items: center;
+
         justify-content: center;
+
         position: relative;
+
         width: 100%;
+
         top: 10px;
+
     }
 
+   
+
 }
+
+ 
 
 @media (width: 1024px) and (height: 600px) {
 
+ 
+
     .logoImage img {
+
         width: 500px !important;
+
         height: 220px !important;
+
     }
 
-    .section1-buttonContainer {
+ 
+
+    .section1-buttonContainer{
+
         top: -10px;
+
     }
 
-    .logo {
+ 
+
+    .logo{
+
         top: -30px;
+
     }
+
+ 
+
+   
 
 }
 
+ 
+
+ 
 
 @media (max-width: 768px) {
-    .logoImage img {
+
+    .logoImage img{
+
+ 
 
         width: 100%;
+
         height: auto;
+
     }
+
+   
 
     .logo,
+
     .section1-buttonContainer {
+
         width: 100%;
+
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
+
+ 
 
     }
 
+ 
+
+ 
 
     .section1-gameLogo {
+
         width: 100%;
+
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
 
+ 
+
     }
+
+ 
 
     .section1-buttonContainer {
+
         top: 0;
+
         justify-content: center;
+
         width: 100%;
 
+ 
+
     }
 
-    .section1-button1 {
+ 
+
+    .section1-button1{
+
         margin: 0;
+
     }
 
-    .section1-button1 img {
-        width: 200px;
-        height: 90px;
+ 
+
+    .section1-button1 img{
+
+        /* width: 100%; */
+
+        height: 100px;
+
     }
 
-    .section1-button2 img {
-        width: 180px;
-        height: 82px;
+   
+
+    .section1-button2 img{
+
+        /* width: 100%; */
+
+        height: 77px;
+
     }
 
+    .gbTruckDiv{
 
+        height: 10%;
+
+        max-width: 100%;
+
+        position: static;
+
+    }
+
+ 
 }
 
-********************************************** .image-4 {
+ 
+
+**********************************************
+
+ 
+
+.image-4 {
+
     position: relative;
+
 }

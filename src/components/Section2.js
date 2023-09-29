@@ -25,9 +25,11 @@ function Section2() {
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div className='textdiv'>
 
-            <h2 >
-              Equip Yourself with Real-Life Recycling Skills in Our Game
-            </h2>
+            <h1 style={{ marginBottom: '6%', marginTop: '3%', fontWeight: '350' }}>
+              
+              Udstyr dig selv med virkelighedsnære evner indenfor genbrug med vores spil.
+
+            </h1>
 
           </div>
 

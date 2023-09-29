@@ -1,8 +1,12 @@
 import React from 'react';
-import Collect from "./images/recycleBorder.png";
-import Container1 from "./images/container 1.png";
-import recycleIcon from "./images/recycle-symbol.png";
-import hammer3 from "./images/hammer_3test-removebg.png";
+import Collect from "./images/FeaturesImages/recycleBorder.png";
+import Container1 from "./images/FeaturesImages/container 1.png";
+import recycleIcon from "./images/FeaturesImages/recycle-symbol.png";
+import hammer3 from "./images/FeaturesImages/hammer_3test-removebg.png";
+//import quiz from "./images/FeaturesImages/quiz.png";
+import quiz2 from "./images/FeaturesImages/quiz2.png";
+
+
 import './Features.css';
 
 
@@ -11,11 +15,11 @@ function Features() {
 
 
     const elements = [
-        { title: "Help to keep city clean", imgSrc: Collect, alt: "opsamle billedet", description: "Samle affald i byen til at få ressourcer og ølagte ting til bygge nye genstande" },
-        { title: "Receive contracts from local authorities", imgSrc: Container1, alt: "Genbrugs billedet", description: " Organisere affald i forskellige ressourcer ved containerne" },
-        { title: "Craft and sell new items", imgSrc: hammer3, alt: "byg billedet", description: "byg nye ting med ressourcerne og klar ordre og kontrakter med det " },
-        { title: "Learn about recycling while playing", imgSrc: recycleIcon, alt: "Genanvend billedet", description: "Genanvend ølagte ting  og lav dem til ressourcer" },
-        { title: "Test your knowledge in quizzes", imgSrc: recycleIcon, alt: "Genanvend billedet", description: "Genanvend ølagte ting  og lav dem til ressourcer" },
+        { title: "Opsaml ressourcer fra skrald og give dem nyt liv.", imgSrc: Collect, alt: "opsamle billedet", description: "Samle affald i byen til at få ressourcer og ølagte ting til bygge nye genstande" },
+        { title: "Oplev de forskellige måder, ting kan genbruges på.", imgSrc: Container1, alt: "Genbrugs billedet", description: " Organisere affald i forskellige ressourcer ved containerne" },
+        { title: "Byg nye ting ud af resourcer.", imgSrc: hammer3, alt: "byg billedet", description: "byg nye ting med ressourcerne og klar ordre og kontrakter med det " },
+        { title: "Adskil ødelagte ting og genanvend ressourcer fra dem.", imgSrc: recycleIcon, alt: "Genanvend billedet", description: "Genanvend ølagte ting  og lav dem til ressourcer" },
+        { title: "Test din viden med nogle quizzer.", imgSrc: quiz2, alt: "Genanvend billedet", description: "Genanvend ølagte ting  og lav dem til ressourcer" },
 
     ];
 
