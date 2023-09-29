@@ -95,11 +95,22 @@ section {
     top: 130px;
 }
 
-.section1-button1, .section1-button2 {
+.section1-button1{
     flex: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 80px !important;
+    margin-right: 30px;
+}
+
+
+.section1-button2 {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px !important;
 }
 
 .section1-button1 img, .section1-button2 img {
@@ -108,7 +119,7 @@ section {
 }
 
 .section1-button1 img {
-    height: 75px;
+ height: 95px;
 }
 
 .section1-button2 img {

@@ -122,13 +122,23 @@ const Section4 = () => {
           )}
 
         </div>
+        
+        <div className='column4' >
+         
+        </div>
+
+
+      
+
+
+
       </div>
 
 
       <div className="windmill-container">
         <img
           src={windmill}
-          style={{ zIndex: '501' }}
+          
           className="windmill"
         />
       </div>

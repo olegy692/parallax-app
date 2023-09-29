@@ -292,7 +292,7 @@ const Section1 = () => {
                    
                     <div className="d-md-flex flex-md-row flex-column section1-buttonContainer ">
 
-                        <div className="d-flex section1-button1">
+                        <div className="section1-button1">
                             <a href='https://play.google.com/store/apps/details?id=com.ArgoGamesRoskilde.Genbrugsspillet&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                                 <img
                                     alt='Get it on Google Play'
@@ -302,7 +302,7 @@ const Section1 = () => {
                             </a>
                         </div>
 
-                         <div className="d-flex section1-button2">
+                         <div className="section1-button2">
                             <a href="https://apple.co/3QIJ0PL">
                                 <img
                                     src={AppStoreLogo}
