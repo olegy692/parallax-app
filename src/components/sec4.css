@@ -54,7 +54,7 @@ section {
     justify-content: flex-end;
     width: 20%;
     background-color: transparent;
-    z-index: 1;
+    z-index: 0;
 
 }
 
@@ -84,14 +84,16 @@ section {
     flex-direction: row;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 .column1 {
-    flex: 0.61;
+    flex: 0.50;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+    margin-left: 40px;
 }
 
 .column1 img {
@@ -104,7 +106,7 @@ section {
 
 .column2 {
 
-    flex: 0.53;
+    flex: 0.50;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,26 +115,22 @@ section {
 
 .column3 {
 
-    flex: 1;
+    flex: 0.50;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
 }
 
-@media (max-width: 1280px) {
-    .windmill-container {
-        width: 0%;
-        height: 0%;
-        bottom: 0;
-    }
-
-    .windmill-container img {
-        width: 0%;
-        height: 0%;
-    }
-
+.column4 {
+    flex: 0.50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
 }
+
+
 
 @media (max-width: 1024px) {
     .image-4 {
@@ -146,12 +144,14 @@ section {
 
     .column1,
     .column2,
-    .column3 {
+    .column3,
+    .column4 {
         flex: 1;
         width: 100%;
         height: auto;
         position: static;
         align-items: center;
+        margin-left: 0;
         
 
     }
@@ -166,7 +166,7 @@ section {
 
     .column3 {
         margin-top: 30px;
-        margin-bottom: 130px;
+        margin-bottom: 30px;
     }
 
     .prevNextIconsSec4 {
@@ -197,6 +197,7 @@ section {
 
 
     .bushes-container {
+       
         width: 100%;
 
     }
@@ -219,6 +220,59 @@ section {
 
     .windmill {
         width: 15%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    
+    .image-4 {
+        height: auto;
+    }
+    .windmill-container {
+        width: 0%;
+        height: 0%;
+        bottom: 0;
+    }
+
+    .contentDiv {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .column1,
+    .column2,
+    .column3,
+    .column4 {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        position: static;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .column1 {
+        margin-top: 150px;
+    }
+
+    .column2 {
+        margin-top: 30px;
+    }
+
+    .column3 {
+        margin-top: 30px;
+     
+    }
+
+    .column4 {
+        margin-bottom: 130px;
+    }
+    
+
+    .windmill-container img {
+        width: 0%;
+        height: 0%;
     }
 
 }

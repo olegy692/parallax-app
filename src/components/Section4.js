@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import windmill from "./images/windmill.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sec4.css'
-import bushes from "./images/bushes-removebg-preview.png";
+import bushes from "./images/DividerImages/bushes-removebg-preview.png";
 import { MDBAnimation } from "mdbreact";
-import ZealandLogo from "./images/ZealandLogo.png";
-import Corolab from "./images/corolab-header-logo-1.svg";
+import ZealandLogo from "./images/LogoImages/ZealandLogo.png";
+import Corolab from "./images/LogoImages/corolab-header-logo-1.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -122,13 +122,23 @@ const Section4 = () => {
           )}
 
         </div>
+        
+        <div className='column4' >
+         
+        </div>
+
+
+      
+
+
+
       </div>
 
 
       <div className="windmill-container">
         <img
           src={windmill}
-          style={{ zIndex: '501' }}
+          
           className="windmill"
         />
       </div>

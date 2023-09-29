@@ -1,98 +1,153 @@
 import React, { useState, useEffect } from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import { Carousel, CarouselItem } from 'react-bootstrap';
-import './testing.css'
+import './Carousel.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
-import carousel11 from './images/carousel11.jpg';
+import carousel11 from './images/CarouselImages/newCarouselImage.jpg';
 
-import testMobile from './images/testTruck_auto_x2_colored_toned_light_ai.jpg';
+import testMobile from './images/CarouselImages/testTruck_auto_x2_colored_toned_light_ai.jpg';
 
 import Wave from 'react-wavify'
 
-import inGame1 from './images/inGamePic2_auto.jpg';
-import inGame3 from './images/inGamePic4_auto.jpg';
-import inGame5 from './images/inGamePic6_auto.jpg';
-import inGame6 from './images/inGamePic7_auto.jpg';
-import inGame7 from './images/inGamePic8_auto.jpg';
-import inGame12 from './images/inGamePic12_auto.jpg';
-import inGame13 from './images/inGamePic13_auto.jpg';
-import inGame16 from './images/newPic18_auto.jpg';
+import inGame1 from './images/CarouselImages/inGamePic2_auto.jpg';
+import inGame3 from './images/CarouselImages/inGamePic4_auto.jpg';
+import inGame5 from './images/CarouselImages/inGamePic6_auto.jpg';
+import inGame6 from './images/CarouselImages/inGamePic7_auto.jpg';
+import inGame7 from './images/CarouselImages/inGamePic8_auto.jpg';
+import inGame12 from './images/CarouselImages/inGamePic12_auto.jpg';
+import inGame13 from './images/CarouselImages/inGamePic13_auto.jpg';
+import inGame16 from './images/CarouselImages/newPic18_auto.jpg';
 
 
-import inGame1mob from './images/inGamePic2mobile_auto.jpg';
-import inGame3mob from './images/inGamePic4mobile_auto.jpg';
-import inGame5mob from './images/inGamePic6mobile_auto.jpg';
-import inGame6mob from './images/inGamePic7mobile_auto.jpg';
-import inGame7mob from './images/inGamePic8mobile_auto.jpg';
-import inGame12mob from './images/inGamePic12mobile_auto (2).jpg';
-import inGame13mob from './images/inGamePic13mobile_auto.jpg';
-import inGame16mob from './images/newPic18_auto.jpg';
-
-
+import inGame1mob from './images/CarouselImages/inGamePic2mobile_auto.jpg';
+import inGame3mob from './images/CarouselImages/inGamePic4mobile_auto.jpg';
+import inGame5mob from './images/CarouselImages/inGamePic6mobile_auto.jpg';
+import inGame6mob from './images/CarouselImages/inGamePic7mobile_auto.jpg';
+import inGame7mob from './images/CarouselImages/inGamePic8mobile_auto.jpg';
+import inGame12mob from './images/CarouselImages/inGamePic12mobile_auto (2).jpg';
+import inGame13mob from './images/CarouselImages/inGamePic13mobile_auto.jpg';
+import inGame16mob from './images/CarouselImages/newPic18_auto.jpg';
 
 
 
 const carouselItems = [
+
   {
+
     image: carousel11,
-    title: ' 1',
+
+    title: ' Kontraktmissioner',
+
     mobileImage: testMobile,
-    text: ' Text Area HereYour Text Area HereYour Text Area Here Your Text Area HereYour Text Area HereYour Text Area HereYour Text Area HereYour Text Area Here',
+
+    text: ' Fortsæt dit genbrugseventyr ved at udføre en kontrakt for hver af vores 12 forskellige butikker rundt om i byen og på den måde give materialer nyt liv ud fra de ressourcer, du opsamler. Man kan tjene penge og få XP.',
+
   },
-  
+
+
+
   {
+
     image: inGame1,
-    title: ' 5',
+
+    title: 'Affald er ressourcer',
+
     mobileImage: inGame1mob,
-    text: 'Your Text Area HereYour Text Area Here',
+
+    text: 'Selv i enhver gyde kan der gemme sig affald, som bare venter på, at du kommer og henter det.',
+
   },
+
   {
+
     image: inGame3,
-    title: '7',
+
+    title: 'En storby',
+
     mobileImage: inGame3mob,
-    text: 'Your Text Area HereYour Text Area Here',
+
+    text: 'En stor og åben verden at udforske i forskellige køretøjer. Du kan udforske byen og køre i de forskellige biler rundt omkring ',
+
   },
+
   {
+
     image: inGame5,
-    title: '9',
+
+    title: 'Informationsskiltene',
+
     mobileImage: inGame5mob,
-    text: 'Your Text Area HereYour Text Area Here',
+
+    text: 'Hvis man er i tvivl om noget, kan man altid finde et skilt i byen, hvis der er noget, man er i tvivl om.',
+
   },
+
   {
+
     image: inGame6,
-    title: '10',
+
+    title: 'Byen har brug for hjælp',
+
     mobileImage: inGame6mob,
-    text: 'Your Text Area HereYour Text Area Here',
+
+    text: 'Byen har brug for din hjælp til at fjerne skraldet fra parkerne og gøre byen ren igen. Byen er plaget af fejlhåndtering af affald og ressourcer, og kan ikke vente på, at du kommer i gang med at spille.',
+
   },
+
   {
+
     image: inGame7,
-    title: '11',
+
+    title: 'Kontrakt for et hospital',
+
     mobileImage: inGame7mob,
-    text: 'You can get contract from different city authorities, drive different types of cars',
+
+    text: 'Alle butikker i byen har brug for møbler og genstande; et hospital skal jo have nye senge og borde indimellem.',
+
   },
+
   {
+
     image: inGame12,
-    title: '14',
+
+    title: 'Garagen',
+
     mobileImage: inGame12mob,
-    text: 'Your Text Area HereYour Text Area Here',
+
+    text: 'Gør brug af Genbrugspladsens biler til at udføre dit arbejde og udforske byen. Når du lynrejser tilbage til Genbrugspladsen, er bilerne også tilbage på sin plads.',
+
   },
+
   {
+
     image: inGame13,
-    title: '15',
+
+    title: 'Ressourcespild',
+
     mobileImage: inGame13mob,
-    text: 'Pollution will have an impact on your game experience and progress',
+
+    text: 'Skraldet har spredt sig udover hele byen og det er dit job at rydde op. At stå til og ikke gøre noget for at genbruge mere vil kun få større omkostninger. Priserne i shoppen vil stige, hvis man ikke tænker på at genbruge.',
+
   },
+
   {
+
     image: inGame16,
-    title: '18',
+
+    title: 'Byen',
+
     mobileImage: inGame16mob,
-    text: 'need to remove yellow line here',
+
+    text: 'Byen venter på, at du kommer og rydder op og fjerne alt skraldet fra gaderne. Imens kan du udforske byen.',
+
   },
-  
+
+
+
 ];
 
 /* carousel14*/
@@ -118,19 +173,19 @@ const ParaBan = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setParallaxSpeed(5); 
+        setParallaxSpeed(5);
       } else {
-        setParallaxSpeed(-5); 
+        setParallaxSpeed(-5);
       }
     };
 
-  
+
     handleResize();
 
-  
+
     window.addEventListener('resize', handleResize);
 
-   
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -166,8 +221,8 @@ const ParaBan = () => {
 
 
               layers={[{ image: window.innerWidth <= 768 ? item.mobileImage : item.image, speed: parallaxSpeed }]}
-             /* layers={[{ image: item.image, speed: parallaxSpeed }]}
-             */
+              /* layers={[{ image: item.image, speed: parallaxSpeed }]}
+              */
               className="aspect"
             />
             <div className="custom-carousel-controls">

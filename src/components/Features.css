@@ -5,10 +5,10 @@
 }
 
 .featureDiv{
-    width: 250px;
+    width: 12%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     margin-right: 50px;
     margin-left: 50px;

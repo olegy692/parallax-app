@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   bottom:-29px;
-  background-image: url(./images/concreet-removebg2.png);
+  background-image: url(./images/DividerImages/concreet-removebg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -19,7 +19,7 @@
   align-items: center;
   width: 100%;
   height: 30%;
-  background-image: url(./images/cloud12.png);
+  background-image: url(./images/DividerImages/cloud12.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 12px;
