@@ -25,7 +25,7 @@ function Section2() {
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div className='textdiv'>
 
-            <h1 style={{ marginBottom: '6%', marginTop: '3%', fontWeight: '350' }}>
+            <h1 style={{ marginBottom: '6%', marginTop: '3%', fontWeight: '350', textAlign:'center' }}>
               
               Udstyr dig selv med virkelighedsnære evner indenfor genbrug med vores spil.
 

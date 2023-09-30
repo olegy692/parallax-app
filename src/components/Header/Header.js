@@ -51,7 +51,7 @@ function Header() {
                 onClick={closeBurgerMenu}
                 onSetActive={() => handleSetActive('image-1')}
               >
-                Home
+                Forside
               </Link>
             </li>
 
@@ -67,7 +67,7 @@ function Header() {
                 onClick={closeBurgerMenu}
                 onSetActive={() => handleSetActive('divbetween1')}
               >
-                About
+                Om
               </Link>
             </li>
 
@@ -99,7 +99,7 @@ function Header() {
                 onClick={closeBurgerMenu}
                 onSetActive={() => handleSetActive('image-4')}
               >
-                Creators
+                Udvikling
               </Link>
             </li>
 
