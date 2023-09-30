@@ -28,7 +28,7 @@ section {
     align-items: center;
     justify-content: center;
     width: 400px;
-    height: 310px;
+    height: 315px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 25px;
@@ -37,12 +37,11 @@ section {
 
 .text-area-sec4 {
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 180px;
     width: 95%;
     overflow: auto;
-    text-align: center;
+    text-align: left;
 }
 
 .windmill-container {
@@ -96,12 +95,14 @@ section {
     margin-left: 40px;
 }
 
-.column1 img {
+.column3 img {
     height: 40px;
+    margin-top:10px; 
 }
 
 .column2 img {
     height: 50px;
+    margin-top:10px
 }
 
 .column2 {
